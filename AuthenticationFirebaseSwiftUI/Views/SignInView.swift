@@ -15,7 +15,7 @@ struct SignInView: View {
     @State var email = ""
     @State var password = ""
     
-    @State var signInProcessing = false
+//    @State var signInProcessing = false
     @State var signInErrorMessage = ""
     
     var body: some View {
@@ -32,8 +32,8 @@ struct SignInView: View {
                     .background(.thinMaterial)
                     .cornerRadius(10)
             }
-                .disabled(!signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
-            if signInProcessing {
+            .disabled(!viewRouter.signInProcessing && !email.isEmpty && !password.isEmpty ? false : true)
+            if viewRouter.signInProcessing {
                 ProgressView()
             }
             if !signInErrorMessage.isEmpty {
@@ -56,22 +56,22 @@ struct SignInView: View {
     
     func signInUser(userEmail: String, userPassword: String) {
         
-        signInProcessing = true
+        viewRouter.signInProcessing = true
         
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             
             guard error == nil else {
-                signInProcessing = false
+                viewRouter.signInProcessing = false
                 signInErrorMessage = error!.localizedDescription
                 return
             }
             switch authResult {
             case .none:
                 print("Could not sign in user.")
-                signInProcessing = false
+                viewRouter.signInProcessing = false
             case .some(_):
                 print("User signed in")
-                signInProcessing = false
+                viewRouter.signInProcessing = false
                 withAnimation {
                     viewRouter.currentPage = .homePage
                 }

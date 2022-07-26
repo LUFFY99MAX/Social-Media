@@ -16,10 +16,12 @@ struct AuthenticationFirebaseSwiftUIApp: App {
     init() {
         FirebaseApp.configure()
     }
-    
+
     var body: some Scene {
         WindowGroup {
-            MotherView().environmentObject(viewRouter)
+//            MotherView().environmentObject(viewRouter)
+            addPictureView()
+//            tryAddDataToFirestore(viewRouter: ViewRouter())
         }
     }
 }

@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  AuthenticationStarter
-//
-//  Created by Work on 13.12.21.
-//
-
 import SwiftUI
 import Firebase
 

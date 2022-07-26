@@ -1,17 +1,13 @@
-//
-//  SignUpView.swift
-//  AuthenticationStarter
-//
-//  Created by Work on 13.12.21.
-//
-
 import SwiftUI
 import Firebase
+import FirebaseFirestore
+import FirebaseStorage
+
 
 struct SignUpView: View {
-    
     @EnvironmentObject var viewRouter: ViewRouter
-    
+    private var db = Firestore.firestore()
+
     @State var email = ""
     @State var password = ""
     @State var passwordConfirmation = ""
@@ -25,7 +21,7 @@ struct SignUpView: View {
             Spacer()
             SignUpCredentialFields(email: $email, password: $password, passwordConfirmation: $passwordConfirmation)
             Button(action: {
-                signUpUser(userEmail: email, userPassword: password)
+                viewRouter.signUpUser(userEmail: email, userPassword: password, email: email)
             }) {
                 Text("Sign Up")
                     .bold()
@@ -55,29 +51,45 @@ struct SignUpView: View {
             .padding()
     }
     
-    func signUpUser(userEmail: String, userPassword: String) {
-        
-        signUpProcessing = true
-        
-        Auth.auth().createUser(withEmail: userEmail, password: userPassword) { authResult, error in
-            guard error == nil else {
-                signUpErrorMessage = error!.localizedDescription
-                signUpProcessing = false
-                return
-            }
-            
-            switch authResult {
-            case .none:
-                print("Could not create account.")
-                signUpProcessing = false
-            case .some(_):
-                print("User created")
-                signUpProcessing = false
-                viewRouter.currentPage = .homePage
-            }
-        }
-        
-    }
+//    func signUpUser(userEmail: String, userPassword: String, email:String) {
+//        
+//        // MARK: - Part of fuction about Authentification
+//        signUpProcessing = true
+//        
+//        Auth.auth().createUser(withEmail: userEmail, password: userPassword) { authResult, error in
+//            guard error == nil else {
+//                signUpErrorMessage = error!.localizedDescription
+//                signUpProcessing = false
+//                return
+//            }
+//            switch authResult {
+//            case .none:
+//                print("Could not create account.")
+//                signUpProcessing = false
+//            case .some(_):
+//                print("User created")
+//                signUpProcessing = false
+//                viewRouter.currentPage = .homePage
+//            }
+//            // MARK: - Part of fuction about Firestore
+//            let docRef = db.collection("Message").addDocument(data: ["email": email])
+//        
+//        docRef.setData(["email": email]) { error in
+//                if let error = error {
+//                    print("Error writing document: \(error)")
+//                } else {
+//                    print("Document successfully written!")
+//                }
+//            // MARK: - Part of fuction about Upload image to Firestore
+//
+//        
+//    }
+//
+//            
+//           
+//        }
+//        
+//    }
     
 }
 
