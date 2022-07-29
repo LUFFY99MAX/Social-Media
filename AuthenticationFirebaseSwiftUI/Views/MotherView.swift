@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct MotherView: View {
-    
     @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var postManager: PostManager
+
+    
     
     var body: some View {
         switch viewRouter.currentPage {
@@ -18,7 +20,8 @@ struct MotherView: View {
         case .signInPage:
             SignInView()
         case .homePage:
-            addPictureView()
+            postView()
+                .environmentObject(PostManager())
         }
     }
 }

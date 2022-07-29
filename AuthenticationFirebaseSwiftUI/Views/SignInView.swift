@@ -19,8 +19,19 @@ struct SignInView: View {
     @State var signInErrorMessage = ""
     
     var body: some View {
-        VStack(spacing: 15) {
-            LogoView()
+        
+        ZStack {
+         VStack(spacing: 15) {
+             Text("Beliver Media")
+                 .bold()
+                 .font(.largeTitle)
+                 .foregroundColor(Color("color4"))
+            
+            Image("guitar")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200.0, height: 200.0, alignment: .center)
+            
             Spacer()
             SignInCredentialFields(email: $email, password: $password)
             Button(action: {
@@ -43,19 +54,22 @@ struct SignInView: View {
             Spacer()
             HStack {
                 Text("Don't have an account?")
+                    .foregroundColor(.white)
                 Button(action: {
                     viewRouter.currentPage = .signUpPage
                 }) {
                     Text("Sign Up")
+                        .foregroundColor(Color("color4"))
                 }
             }
                 .opacity(0.9)
-        }
+            }
+    }
             .padding()
+            .background(Color.black)
     }
     
     func signInUser(userEmail: String, userPassword: String) {
-        
         viewRouter.signInProcessing = true
         
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in

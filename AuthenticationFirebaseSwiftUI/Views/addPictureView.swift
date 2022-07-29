@@ -6,6 +6,7 @@ import FirebaseStorage
 struct addPictureView: View {
     @State private var image: Image? =  Image(systemName: "person")
     @State private var shouldPresentImagePicker = false
+    @State var image3 = ""
     
     @State private var shouldPresentActionScheet = false
     @State private var shouldPresentCamera = false
@@ -13,10 +14,7 @@ struct addPictureView: View {
     @State var shouldShowImagePicker = false
     @State var image2: UIImage?
     @State var StatusMessage = ""
-    
-    @State var image3 = ""
-
-        
+            
     var body: some View {
         // WARNING: Force wrapped image for demo purpose
         NavigationView {
@@ -65,8 +63,6 @@ struct addPictureView: View {
                                            }
                            }
                        }
-                    
-                    
                     Button {
                            shouldShowImagePicker.toggle()
                        } label: {
@@ -84,32 +80,25 @@ struct addPictureView: View {
                                 }
                        }
                     
-                    
                     Button("Add photo profil") {
                         print("Ooooh yeah continue!")
 //                        persistImageToStorage()
                         persistImageToStorage2()
-
-                          
                                                 }
-                                                    .buttonStyle(.bordered)
-                                                    .tint(.green)
+                                .buttonStyle(.bordered)
+                                .tint(.green)
                                             }
                 .navigationViewStyle(StackNavigationViewStyle())
-                            .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {
-                                ImagePicker(image: $image2)
-                                    .ignoresSafeArea()
+                .fullScreenCover(isPresented: $shouldShowImagePicker, onDismiss: nil) {
+                    ImagePicker(image: $image2)
+                    .ignoresSafeArea()
                             }
-            
-               
-                
             }
         }
    }
     func persistImageToStorage2() {
+        
         guard image2 != nil else {
-            print("here1")
-
             return
         }
         
@@ -118,11 +107,13 @@ struct addPictureView: View {
          let imageData = image2?.jpegData(compressionQuality: 0.5)
         
         guard imageData != nil else {
-            print("here2")
             return
         }
+        
+        let path = ("images/\(UUID().uuidString).jpg")
 
-        let fileRef = storageRef.child("images/\(UUID().uuidString) . jpg")
+
+        let fileRef = storageRef.child("images/\(UUID().uuidString).jpg")
 
         let uploadTask = fileRef.putData(imageData!, metadata: nil) { metadata, error in
          
@@ -132,36 +123,10 @@ struct addPictureView: View {
         }
         }
         
-
+        Firestore.firestore().collection("messages").document().setData(["url" : path])
+        
        }
-}
-//         func persistImageToStorage() {
-////            guard let uid = Auth.auth().currentUser?.uid else { return }
-////            let ref = Storage.storage().reference(withPath: uid)
-//            let ref = Storage.storage().reference()
-//
-//            guard let imageData = self.image2?.jpegData(compressionQuality: 0.5) else { return }
-//            ref.putData(imageData, metadata: nil) { metadata, err in
-//                if let err = err {
-//                    self.StatusMessage = "Failed to push image to Storage: \(err)"
-//                    return
-//                }
-//
-//                ref.downloadURL { url, err in
-//                    if let err = err {
-//                        self.StatusMessage = "Failed to retrieve downloadURL: \(err)"
-//                        return
-//                    }
-//
-//                    self.StatusMessage = "Successfully stored image with url: \(url?.absoluteString ?? "")"
-//                    print(url?.absoluteString)
-//                }
-//            }
-//
-//    }
-    //
-
-
+    }
 struct addPicture2_Previews: PreviewProvider {
     static var previews: some View {
         addPictureView()

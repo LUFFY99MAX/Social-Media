@@ -17,7 +17,16 @@ struct SignUpView: View {
     
     var body: some View {
         VStack(spacing: 15) {
-            LogoView()
+            
+            Text("Beliver Media")
+                .bold()
+                .font(.largeTitle)
+                .foregroundColor(Color("color4"))
+            
+            Image("video-calling")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200.0, height: 200.0, alignment: .center)
             Spacer()
             SignUpCredentialFields(email: $email, password: $password, passwordConfirmation: $passwordConfirmation)
             Button(action: {
@@ -40,57 +49,21 @@ struct SignUpView: View {
             Spacer()
             HStack {
                 Text("Already have an account?")
+                    .foregroundColor(.white)
                 Button(action: {
                     viewRouter.currentPage = .signInPage
                 }) {
                     Text("Log In")
+                        .foregroundColor(Color("color3"))
+
                 }
             }
                 .opacity(0.9)
         }
             .padding()
+            .background(Color("color1")
+)
     }
-    
-//    func signUpUser(userEmail: String, userPassword: String, email:String) {
-//        
-//        // MARK: - Part of fuction about Authentification
-//        signUpProcessing = true
-//        
-//        Auth.auth().createUser(withEmail: userEmail, password: userPassword) { authResult, error in
-//            guard error == nil else {
-//                signUpErrorMessage = error!.localizedDescription
-//                signUpProcessing = false
-//                return
-//            }
-//            switch authResult {
-//            case .none:
-//                print("Could not create account.")
-//                signUpProcessing = false
-//            case .some(_):
-//                print("User created")
-//                signUpProcessing = false
-//                viewRouter.currentPage = .homePage
-//            }
-//            // MARK: - Part of fuction about Firestore
-//            let docRef = db.collection("Message").addDocument(data: ["email": email])
-//        
-//        docRef.setData(["email": email]) { error in
-//                if let error = error {
-//                    print("Error writing document: \(error)")
-//                } else {
-//                    print("Document successfully written!")
-//                }
-//            // MARK: - Part of fuction about Upload image to Firestore
-//
-//        
-//    }
-//
-//            
-//           
-//        }
-//        
-//    }
-    
 }
 
 struct SignUpView_Previews: PreviewProvider {
