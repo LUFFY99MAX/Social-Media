@@ -1,3 +1,4 @@
 # Social-Media
 In this app i used socaile media feature like(log in, sign up, Sign out, Post)
-![IMG_3287](https://user-images.githubusercontent.com/83470095/182114334-b1c8221e-0b91-4a37-a4ef-dbdcec0868e9.jpg)
+![Screenshot 2022-08-01 at 10 09 27](https://user-images.githubusercontent.com/83470095/182114663-636c1e38-bc32-4ec7-9faa-dd268eaad986.png)
+![Screenshot 2022-08-01 at 10 09 11](https://user-images.githubusercontent.com/83470095/182114672-b1ee0b73-cb80-43f7-a7eb-ce43ee7f3236.png)
