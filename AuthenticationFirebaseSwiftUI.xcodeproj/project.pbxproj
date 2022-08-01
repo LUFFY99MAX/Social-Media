@@ -16,8 +16,28 @@
 		962C51052771D5FD008CC83B /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C51002771D5FD008CC83B /* MotherView.swift */; };
 		962C51062771D5FD008CC83B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962C51012771D5FD008CC83B /* SignUpView.swift */; };
 		FA261B322893CBB600D16887 /* createPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA261B312893CBB600D16887 /* createPostView.swift */; };
+		FA261B402894395A00D16887 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B342894395800D16887 /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		FA261B412894395A00D16887 /* PlayfairDisplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B352894395800D16887 /* PlayfairDisplay-Italic.ttf */; };
+		FA261B422894395A00D16887 /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B362894395800D16887 /* PlayfairDisplay-BoldItalic.ttf */; };
+		FA261B432894395A00D16887 /* PlayfairDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B372894395800D16887 /* PlayfairDisplay-Medium.ttf */; };
+		FA261B442894395A00D16887 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B382894395900D16887 /* PlayfairDisplay-Bold.ttf */; };
+		FA261B452894395A00D16887 /* PlayfairDisplay-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B392894395900D16887 /* PlayfairDisplay-BlackItalic.ttf */; };
+		FA261B462894395A00D16887 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B3A2894395900D16887 /* PlayfairDisplay-Regular.ttf */; };
+		FA261B482894395A00D16887 /* PlayfairDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B3C2894395900D16887 /* PlayfairDisplay-Black.ttf */; };
+		FA261B492894395A00D16887 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B3D2894395900D16887 /* PlayfairDisplay-ExtraBold.ttf */; };
+		FA261B4A2894395A00D16887 /* PlayfairDisplay-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B3E2894395A00D16887 /* PlayfairDisplay-MediumItalic.ttf */; };
+		FA261B5628943ACD00D16887 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B4C28943ACB00D16887 /* Lato-LightItalic.ttf */; };
+		FA261B5728943ACD00D16887 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B4D28943ACC00D16887 /* Lato-ThinItalic.ttf */; };
+		FA261B5828943ACD00D16887 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B4E28943ACC00D16887 /* Lato-Bold.ttf */; };
+		FA261B5928943ACD00D16887 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B4F28943ACC00D16887 /* Lato-Thin.ttf */; };
+		FA261B5A28943ACD00D16887 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B5028943ACC00D16887 /* Lato-BlackItalic.ttf */; };
+		FA261B5B28943ACD00D16887 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B5128943ACC00D16887 /* Lato-BoldItalic.ttf */; };
+		FA261B5C28943ACD00D16887 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B5228943ACD00D16887 /* Lato-Italic.ttf */; };
+		FA261B5D28943ACD00D16887 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA261B5328943ACD00D16887 /* Lato-Black.ttf */; };
+		FA261B5E28943ACD00D16887 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA261B5428943ACD00D16887 /* OFL.txt */; };
 		FA3F8C0428742BD700B4EB53 /* imageQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F8C0328742BD700B4EB53 /* imageQuality.swift */; };
 		FA9F2627288AF043001B0636 /* imagePickerExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F2626288AF043001B0636 /* imagePickerExtension2.swift */; };
+		FAA6FF36289522F4003BA5C2 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAA6FF35289522F4003BA5C2 /* Lato-Regular.ttf */; };
 		FAB26C42286E2D76000B0AAA /* imagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB26C41286E2D76000B0AAA /* imagePickerExtension.swift */; };
 		FAB26C44286E2E00000B0AAA /* addPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB26C43286E2E00000B0AAA /* addPictureView.swift */; };
 		FACE4ED228927FCB00FAD646 /* postView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE4ED128927FCA00FAD646 /* postView.swift */; };
@@ -42,8 +62,29 @@
 		962C51002771D5FD008CC83B /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		962C51012771D5FD008CC83B /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FA261B312893CBB600D16887 /* createPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPostView.swift; sourceTree = "<group>"; };
+		FA261B342894395800D16887 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		FA261B352894395800D16887 /* PlayfairDisplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Italic.ttf"; sourceTree = "<group>"; };
+		FA261B362894395800D16887 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FA261B372894395800D16887 /* PlayfairDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		FA261B382894395900D16887 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		FA261B392894395900D16887 /* PlayfairDisplay-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FA261B3A2894395900D16887 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		FA261B3C2894395900D16887 /* PlayfairDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Black.ttf"; sourceTree = "<group>"; };
+		FA261B3D2894395900D16887 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FA261B3E2894395A00D16887 /* PlayfairDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FA261B4C28943ACB00D16887 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		FA261B4D28943ACC00D16887 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FA261B4E28943ACC00D16887 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		FA261B4F28943ACC00D16887 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		FA261B5028943ACC00D16887 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FA261B5128943ACC00D16887 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FA261B5228943ACD00D16887 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		FA261B5328943ACD00D16887 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		FA261B5428943ACD00D16887 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		FA3F8C0328742BD700B4EB53 /* imageQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageQuality.swift; sourceTree = "<group>"; };
 		FA9F2626288AF043001B0636 /* imagePickerExtension2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerExtension2.swift; sourceTree = "<group>"; };
+		FAA6FF34289520E5003BA5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAA6FF35289522F4003BA5C2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FAB26C41286E2D76000B0AAA /* imagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePickerExtension.swift; sourceTree = "<group>"; };
 		FAB26C43286E2E00000B0AAA /* addPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPictureView.swift; sourceTree = "<group>"; };
 		FACE4ED128927FCA00FAD646 /* postView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postView.swift; sourceTree = "<group>"; };
@@ -73,7 +114,6 @@
 			children = (
 				962C50ED2771D5D2008CC83B /* AuthenticationFirebaseSwiftUI */,
 				962C50EC2771D5D2008CC83B /* Products */,
-				FAB2F8B6286F444000D09111 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +128,10 @@
 		962C50ED2771D5D2008CC83B /* AuthenticationFirebaseSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FAA6FF34289520E5003BA5C2 /* Info.plist */,
 				962C50EE2771D5D2008CC83B /* AuthenticationFirebaseSwiftUIApp.swift */,
 				962C50FC2771D5FC008CC83B /* ViewRouter.swift */,
+				FA261B33289438F400D16887 /* Fonts */,
 				FACE4ED628928F6900FAD646 /* View Model */,
 				FACE4ED32892838100FAD646 /* Model */,
 				FA3F8C0228742B9700B4EB53 /* Extension */,
@@ -125,6 +167,33 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FA261B33289438F400D16887 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA261B3C2894395900D16887 /* PlayfairDisplay-Black.ttf */,
+				FA261B392894395900D16887 /* PlayfairDisplay-BlackItalic.ttf */,
+				FA261B382894395900D16887 /* PlayfairDisplay-Bold.ttf */,
+				FA261B362894395800D16887 /* PlayfairDisplay-BoldItalic.ttf */,
+				FA261B3D2894395900D16887 /* PlayfairDisplay-ExtraBold.ttf */,
+				FA261B342894395800D16887 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+				FA261B352894395800D16887 /* PlayfairDisplay-Italic.ttf */,
+				FA261B372894395800D16887 /* PlayfairDisplay-Medium.ttf */,
+				FA261B3E2894395A00D16887 /* PlayfairDisplay-MediumItalic.ttf */,
+				FAA6FF35289522F4003BA5C2 /* Lato-Regular.ttf */,
+				FA261B3A2894395900D16887 /* PlayfairDisplay-Regular.ttf */,
+				FA261B5328943ACD00D16887 /* Lato-Black.ttf */,
+				FA261B5028943ACC00D16887 /* Lato-BlackItalic.ttf */,
+				FA261B4E28943ACC00D16887 /* Lato-Bold.ttf */,
+				FA261B5128943ACC00D16887 /* Lato-BoldItalic.ttf */,
+				FA261B5228943ACD00D16887 /* Lato-Italic.ttf */,
+				FA261B4C28943ACB00D16887 /* Lato-LightItalic.ttf */,
+				FA261B4F28943ACC00D16887 /* Lato-Thin.ttf */,
+				FA261B4D28943ACC00D16887 /* Lato-ThinItalic.ttf */,
+				FA261B5428943ACD00D16887 /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FA3F8C0228742B9700B4EB53 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,13 +209,6 @@
 			children = (
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		FAB2F8B6286F444000D09111 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FACE4ED32892838100FAD646 /* Model */ = {
@@ -232,9 +294,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA261B462894395A00D16887 /* PlayfairDisplay-Regular.ttf in Resources */,
+				FA261B442894395A00D16887 /* PlayfairDisplay-Bold.ttf in Resources */,
+				FA261B5928943ACD00D16887 /* Lato-Thin.ttf in Resources */,
+				FA261B5C28943ACD00D16887 /* Lato-Italic.ttf in Resources */,
+				FA261B412894395A00D16887 /* PlayfairDisplay-Italic.ttf in Resources */,
+				FA261B5E28943ACD00D16887 /* OFL.txt in Resources */,
+				FA261B492894395A00D16887 /* PlayfairDisplay-ExtraBold.ttf in Resources */,
 				962C50F62771D5D3008CC83B /* Preview Assets.xcassets in Resources */,
+				FA261B5828943ACD00D16887 /* Lato-Bold.ttf in Resources */,
+				FAA6FF36289522F4003BA5C2 /* Lato-Regular.ttf in Resources */,
+				FA261B482894395A00D16887 /* PlayfairDisplay-Black.ttf in Resources */,
+				FA261B5D28943ACD00D16887 /* Lato-Black.ttf in Resources */,
+				FA261B402894395A00D16887 /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
+				FA261B4A2894395A00D16887 /* PlayfairDisplay-MediumItalic.ttf in Resources */,
+				FA261B5B28943ACD00D16887 /* Lato-BoldItalic.ttf in Resources */,
+				FA261B5A28943ACD00D16887 /* Lato-BlackItalic.ttf in Resources */,
+				FA261B452894395A00D16887 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
+				FA261B5628943ACD00D16887 /* Lato-LightItalic.ttf in Resources */,
+				FA261B432894395A00D16887 /* PlayfairDisplay-Medium.ttf in Resources */,
 				962C50F32771D5D3008CC83B /* Assets.xcassets in Resources */,
+				FA261B422894395A00D16887 /* PlayfairDisplay-BoldItalic.ttf in Resources */,
 				FAE023D6286CC92400AEE849 /* GoogleService-Info.plist in Resources */,
+				FA261B5728943ACD00D16887 /* Lato-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +475,8 @@
 				DEVELOPMENT_TEAM = 8M94F2WL46;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthenticationFirebaseSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,6 +506,8 @@
 				DEVELOPMENT_TEAM = 8M94F2WL46;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthenticationFirebaseSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

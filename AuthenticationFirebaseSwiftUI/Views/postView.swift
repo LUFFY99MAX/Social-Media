@@ -8,28 +8,46 @@ struct postView: View {
         ZStack(alignment: .bottomTrailing) {            
             
         ScrollView {
-            Text("Tales")
+            VStack(alignment: .leading) {
+            Text("Stories")
+                    .foregroundColor(Color("color3"))
                 .bold()
-                .font(.largeTitle)
-                .padding(.vertical)
+                .font(.custom("PlayfairDisplay-Bold", size: 40))
+//                .font(.custom("La"))
+                .padding(15)
             
         ForEach(vm.posts, id: \.id) { post in
             
         VStack(alignment: .leading) {
             Text(post.title)
+                .font(.custom("PlayfairDisplay-Bold", size: 24))
+//                .font(.system(size: 24))
+                .foregroundColor(.white)
                 .bold()
-                .font(.system(size: 21))
-            Text(post.tale)
                 .padding()
-                .background(.gray)
+            
+            Text(post.tale)
+                .font(.custom("Lato-Regular", size: 18))
+
+                .font(.system(size: 18))
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 400, alignment: .leading)
                 .cornerRadius(15)
             
         }
+        .background(Color("color2"))
+        .cornerRadius(15)
         .padding()
+
           }
         }
+    }
+        .background(.black)
+        .opacity(0.95)
             Image(systemName: "pencil.circle.fill")
-                .font(.system(size: 30))
+                .foregroundColor(Color("color3"))
+                .font(.system(size: 60))
                 .padding(10)
                 .onTapGesture {
                     showPopUp.toggle()

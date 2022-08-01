@@ -1,10 +1,3 @@
-//
-//  AuthenticationFirebaseSwiftUIApp.swift
-//  AuthenticationFirebaseSwiftUI
-//
-//  Created by Work on 21.12.21.
-//
-
 import SwiftUI
 import Firebase
 
@@ -15,10 +8,10 @@ struct AuthenticationFirebaseSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MotherView()
-            .environmentObject(viewRouter)
-//            postView()
-//                .environmentObject(PostManager())
+//            MotherView()
+//            .environmentObject(viewRouter)
+            postView()
+                .environmentObject(PostManager())
 //            
 //                SignInView()
 //            tryAddDataToFirestore(viewRouter: ViewRouter())
